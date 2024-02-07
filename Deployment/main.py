@@ -11,7 +11,7 @@ st.title("Liver Disosder Classification")
 tab1,tab2,tab3 = st.tabs(["Home","DataSet","Prediction"])
 with tab1:
     df_web = pd.read_csv("Deployment/data/Indian Liver Patient Dataset (ILPD).csv")
-    st.image("aset/header.png")
+    st.image("Deployment/aset/header.png")
     st.subheader("What is _Liver Disorder?_")
     st.markdown("Liver disorder refers to any condition or disease that affects the functioning of the liver. The liver is a vital organ responsible for numerous essential functions in the body. Deaths from cirrhosis of the liver continue to increase due to rising rates of alcohol consumption, chronic hepatitis infections, and obesity-related liver disease. Despite the high mortality of this disease, liver disease does not affect all subpopulations equally. Early detection of pathology is a determinant of patient outcomes, yet female patients appear to be marginalized when it comes to early diagnosis of liver pathology. The dataset consists of 584 patient records collected from the North East of Andhra Pradesh, India. The prediction task is to determine whether a patient suffers from liver disease based on information about several biochemical markers, including albumin and other enzymes required for metabolism.")
 
