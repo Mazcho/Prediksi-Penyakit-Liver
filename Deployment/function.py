@@ -35,7 +35,7 @@ def mlStatsMetrics():
 def singlePredict():
     col1,col2 = st.columns(2)
     with col1:
-        age = st.number_input("Age")
+        age = st.number_input("Age",value=0)
         Gender = st.number_input("Gender")
         Total_Bilirubin = st.number_input("TB")
         Direct_Bilirubin = st.number_input("DB")
