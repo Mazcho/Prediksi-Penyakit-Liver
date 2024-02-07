@@ -44,8 +44,8 @@ def singlePredict():
         sgpt = st.number_input("Sgpt",value=0.0)
         sgot= st.number_input("Sgot",value=0.0)
         tp = st.number_input("TP",value=0.0)
-        alb = st.number_input("ALB",,value=0.0)
-        agratio = st.number_input("A/G Ration",,value=0.0)
+        alb = st.number_input("ALB",value=0.0)
+        agratio = st.number_input("A/G Ration",value=0.0)
     
     if st.button("Predict"):
         user_input=[[age,Gender,Total_Bilirubin,Direct_Bilirubin,alkphos,sgpt,sgot,tp,alb,agratio]]
