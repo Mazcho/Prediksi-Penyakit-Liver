@@ -8,7 +8,7 @@ import streamlit as st
 import joblib
 
 def mlStatsMetrics():
-    path = "data/Indian Liver Patient Dataset (ILPD).csv"
+    path = "Deployment/data/Indian Liver Patient Dataset (ILPD).csv"
     df = pd.read_csv(path)
     df.drop("Selector",axis=1,inplace=True)
     labelencoder = LabelEncoder()
