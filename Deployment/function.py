@@ -36,16 +36,16 @@ def singlePredict():
     col1,col2 = st.columns(2)
     with col1:
         age = st.number_input("Age",value=0)
-        Gender = st.number_input("Gender")
-        Total_Bilirubin = st.number_input("TB")
-        Direct_Bilirubin = st.number_input("DB")
-        alkphos = st.number_input("Alkphos")
+        Gender = st.number_input("Gender",value=0)
+        Total_Bilirubin = st.number_input("TB",value=0.0)
+        Direct_Bilirubin = st.number_input("DB",value=0.0)
+        alkphos = st.number_input("Alkphos",value=0.0)
     with col2:
-        sgpt = st.number_input("Sgpt")
-        sgot= st.number_input("Sgot")
-        tp = st.number_input("TP")
-        alb = st.number_input("ALB")
-        agratio = st.number_input("A/G Ration")
+        sgpt = st.number_input("Sgpt",value=0.0)
+        sgot= st.number_input("Sgot",value=0.0)
+        tp = st.number_input("TP",value=0.0)
+        alb = st.number_input("ALB",,value=0.0)
+        agratio = st.number_input("A/G Ration",,value=0.0)
     
     if st.button("Predict"):
         user_input=[[age,Gender,Total_Bilirubin,Direct_Bilirubin,alkphos,sgpt,sgot,tp,alb,agratio]]
