@@ -28,7 +28,7 @@ with tab1:
         df_filtered_age = df_web[df_web["Selector2"] == 0]
         st.bar_chart(data = df_filtered_age["Gender"].value_counts())
 with tab2:
-    st.image("aset/datasetkaggle.png")
+    st.image("Deployment/aset/datasetkaggle.png")
     st.subheader("Where do I get the record?")
     url = "https://www.kaggle.com/datasets/fatemehmehrparvar/liver-disorders/data"
     text_link = "Link Dataset here."
